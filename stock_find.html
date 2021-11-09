@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" lang="en-IN">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="assets/js/scripts.js"></script>
+        <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+        <title>Vaccine Stock Finder - StockMed</title>              
+    </head>
+    <body>
+        <div id="topNav" class="navBar">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a id="active" href="stock_find.html">VACCINE SEARCH</a>
+            <a href="location.html">VACCINE CENTER LOCATOR</a>
+            <a href="contact.html">CONTACT</a>
+            <a id="icon" onclick="loadMenu()">
+                <i class="las la-bars"></i>
+            </a>
+        </div>
+        <div id="center_position">
+            <h1>Vaccine Stock Search</h1><br>
+            <form name="stSearch" method="POST">
+                <input type="text" pattern="[0-9]{6}" placeholder="Pincode" name="pincode" value=""><br><br>
+                <input type="button" onclick="stockSearch()" value="Find">
+            </form>
+            <div id="sSearch"></div>
+        </div>
+    </body>
+</html>
